@@ -14,8 +14,8 @@
 ## Explain the Concept of a Resolver function, and provide a number of simple examples of resolvers you have implemented in a GraphQL Server.
 ## Explain the benefits we get from using a library like Apollo-client, compared to using the plain fetch-API
 ## In an Apollo-based React Component, demonstrate how to perform GraphQL Queries, including:
-- **Explain the structure of the Query Component**
-- **Explain the purpose of ApolloClient and the ApolloProvider component**
-- **Explain the purpose of the gql-function (imported from graphql-tag)**
+### - Explain the structure of the Query Component
+### - Explain the purpose of ApolloClient and the ApolloProvider component
+### - Explain the purpose of the gql-function (imported from graphql-tag)
 ## In an Apollo-based React Component, demonstrate how to perform GraphQL Mutations?
 ## Demonstrate and highlight important parts of a “complete” GraphQL-app using Express and MongoDB on the server side, and Apollo-Client on the client.
