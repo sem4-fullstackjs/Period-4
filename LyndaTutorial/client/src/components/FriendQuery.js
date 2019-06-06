@@ -62,10 +62,10 @@ class CreateFriend extends Component {
 					)}
 				</Mutation>
 				{this.state && JSON.stringify(this.state)}
-				{this.state.response &&
+				{/* {this.state.response &&
 					`${JSON.parse(this.state.response).status} ${
 						JSON.parse(this.state.response).msg
-					}`}
+					}`} */}
 			</>
 		)
 	}
@@ -137,4 +137,4 @@ const Friend = ({ id }) => (
 // 	)
 // }
 
-export { CreateFriend, DelayedFriend, Friend }
+export { CreateFriend }
