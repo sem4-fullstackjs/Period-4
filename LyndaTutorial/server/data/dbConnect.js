@@ -3,6 +3,7 @@ import mongoose from 'mongoose'
 // Mongo Connection
 mongoose.Promise = global.Promise
 mongoose.connect(
+	// Normally i would not let this connection string be visiable - hide it, in a settings.js file etc.
 	'mongodb+srv://Admin:Passw0rd@gonnerscluster-g61w7.mongodb.net/friends?retryWrites=true',
 	{
 		useNewUrlParser: true,

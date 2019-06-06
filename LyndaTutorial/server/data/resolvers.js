@@ -4,7 +4,7 @@ import { Friends } from './dbConnect'
 // resolver map
 export const resolvers = {
 	Query: {
-		getFriend: ({ id }) => {
+		getOneFriend: ({ id }) => {
 			return new Friend(id, friendDatabase[id])
 		}
 	},
