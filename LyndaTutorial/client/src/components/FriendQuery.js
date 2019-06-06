@@ -52,11 +52,22 @@ class CreateFriend extends Component {
 						<div>
 							<form
 								onSubmit={async e => {
+									console.log('1')
 									e.preventDefault()
+									console.log('2')
 									const response = await createFriend({
 										variables: { FriendInput: this.state.friendInput }
 									})
-									this.setState({ response: response.data.createFriend })
+									console.log('3')
+									console.log('res', response)
+									this.setState({
+										response: response.data.createFriend
+									})
+								}}
+								onChange={e => {
+									let friendInput = this.state.friendInput
+									friendInput[e.target.name] = e.target.value
+									this.setState({ friendInput: friendInput })
 								}}
 							>
 								<input name="firstName" placeholder="First Name" />

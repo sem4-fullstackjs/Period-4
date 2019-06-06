@@ -9,7 +9,7 @@ export const resolvers = {
 		}
 	},
 	Mutation: {
-		createFriend: (root, { input }) => {
+		createFriend: async (root, { input }) => {
 			const newFriend = new Friends({
 				firstName: input.firstName,
 				lastName: input.lastName,
@@ -22,12 +22,7 @@ export const resolvers = {
 
 			newFriend.id = newFriend._id
 
-			return new Promise((resolve, object) => {
-				newFriend.save(err => {
-					if (err) reject(err)
-					else resolve(newFriend)
-				})
-			})
+			return await JSON.stringify(newFriend.save())
 		},
 		updateFriend: (root, { input }) => {
 			return new Promise((resolve, object) => {

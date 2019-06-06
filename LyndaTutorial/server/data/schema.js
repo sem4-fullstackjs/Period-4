@@ -45,7 +45,7 @@ const typeDefs = `
     }
 
     type Mutation {
-        createFriend(input: FriendInput): Friend
+        createFriend(input: FriendInput): String
         updateFriend(input: FriendInput): Friend
         deleteFriend(id: ID!): String
     }
