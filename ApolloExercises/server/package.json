@@ -9,7 +9,7 @@
     "shortid": "2.2.8",
     "node-fetch": "2.3.0",
     "shorthash": "0.0.2",
-    "lodash": "4.17.11"
+    "lodash": "4.17.19"
   },
   "license": "MIT",
   "main": "index.js",
